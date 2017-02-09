@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.komal.geoapp2.MainActivity">
+    <!--<TextView
+        android:id="@+id/location_address_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="address"
+        android:textSize="@dimen/default_text_size" />
+
+        <EditText
+        android:id="@+id/assigned_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="assigned_id"
+        android:inputType="number"
+        android:maxLines="1"
+        android:singleLine="true"
+                    />
+    <TextView
+        android:id="@+id/latlon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="gps"
+        android:textSize="@dimen/default_text_size"
+        />-->
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/webView" />
+
+    <ImageButton
+        android:id="@+id/fetch_address_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fetch_address"
+        android:onClick="fetchAddressButtonHandler"
+        android:src="@drawable/ic_action_name"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
